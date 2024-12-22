@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(29, 53%, 90%);
+    font-family: "Outfit", serif;
+    margin: 0;
+}
+h1,h2{
+    font-family: "Young Serif", serif;
+}
+h2{
+    color: hsl(14, 45%, 36%);
+}
+li{
+    padding: 10px 0;
+    color:hsl(30, 10%, 34%) ;
+}
+.recipe{
+    width:800px;
+    max-width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 40px;
+    border-radius: 15px;
+    margin: 50px auto;
+}
+@media (max-width:767px){
+    .recipe{
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+.recipe .image img{
+    max-width: 100%;
+    border-radius:15px ;
+}
+@media (max-width:767px){
+    .recipe .image img{
+        border-radius: 0;
+    }
+}
+@media (max-width:767px){
+    .recipe .details{
+        padding: 25px;
+    }
+}
+.recipe .details h1{
+    color: hsl(24, 5%, 18%);
+}
+.recipe .details h1 + p{
+    color: hsl(30, 10%, 34%);
+    font-size: 17px;
+    line-height: 1.4rem;
+}
+.recipe .details .time{
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 15px;
+    background-color: hsl(330, 100%, 98%);
+}
+.recipe .details .time p{
+    color: hsl(332, 51%, 32%);
+    font-size: 18px;
+    font-weight: 600;
+}
+.recipe .details .time ul li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.recipe .details .ingredients,
+.recipe .details .instructions{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.recipe .details .ingredients ul li::marker{
+    color:hsl(14, 45%, 36%) ;
+    font-weight: bold;
+}
+.recipe .details .instructions li{
+    padding-left: 10px;
+}
+.recipe .details .instructions li::marker{
+    color:hsl(14, 45%, 36%) ;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+.recipe .details .instructions h3{
+    display: inline-block;
+    display: inline-block;
+    margin: 0;
+}
+.recipe .nutrition p{
+    color: hsl(30, 10%, 34%);
+}
+.recipe .nutrition table{
+    width: 100%;
+}
+.recipe .nutrition table tr td{
+    padding: 15px 0;
+}
+.recipe .nutrition table tr:not(:last-child) td{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.recipe .nutrition table tr td:first-child{
+    color: hsl(30, 10%, 34%);
+}
+.recipe .nutrition table tr td:last-child{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
