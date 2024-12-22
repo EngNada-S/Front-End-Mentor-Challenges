@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Inter", serif;
+    background-color:hsl(0, 0%, 8%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    width: 350px;
+    max-width: calc(100% - 30px);
+    padding: 20px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.profile h3{
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+.profile p:first-of-type{
+    color: hsl(75, 94%, 57%);
+    font-weight: 400;
+    margin: 0;
+}
+.profile p:last-of-type{
+    color: hsl(0, 0%, 100%);
+    margin: 25px 0;
+    text-align: center;
+}
+.profile ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.profile ul li {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 20%);
+}
+.profile ul li:hover {
+    background-color: hsl(75, 94%, 57%);
+}
+.profile ul li a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: 700;
+}
+.profile ul li:hover a {
+    color: hsl(0, 0%, 8%);
+}
