@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Red Hat Display", serif;
+}
+@media (max-width:767px){
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}
+.summary{
+    width: 400px;
+    max-width: calc(100% - 30px);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.summary img{
+    max-width: 100%;
+}
+.summary .content{
+    text-align: center;
+    padding: 30px;
+}
+.summary .content h1{
+    margin-top: 0;
+    font-size: 22px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.summary .content p{
+    color: hsl(224, 23%, 55%);
+}
+.summary .content div {
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.summary .content div img{
+    width: 40px;
+    height: 40px;
+}
+.summary .content div p{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.summary .content div p span:first-child{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.summary .content div a{
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    font-weight: 700;
+}
+.summary .content div a:hover{
+    text-decoration: none;
+    color: hsl(245, 83%, 68%);
+}
+.summary .content button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+.summary .content button:first-of-type{
+    border-radius: 20px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    margin: 15px 0;
+    box-shadow: 5px 5px 10px hsla(245, 75%, 52%, 0.3);
+}
+.summary .content button:first-of-type:hover{
+    background-color:hsl(245, 83%, 68%) ;
+}
+.summary .content button:last-of-type{
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+}
+.summary .content button:last-of-type:hover{
+    color: hsl(223, 47%, 23%);
+}
