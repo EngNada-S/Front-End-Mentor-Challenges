@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --Soft-violet:hsl(277, 64%, 61%);
+    --text-color:hsla(0, 0%, 100%, 0.75);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: "Inter", serif;
+}
+.card{
+    width: 900px;
+    max-width: 100%;
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+@media (max-width:767px){
+    .card{
+        flex-direction: column-reverse;
+    }
+}
+.card .details{
+    flex: 1;
+    padding:65px 45px;
+}
+@media (max-width:767px){
+    .card .details{
+        text-align: center;
+        padding: 50px 30px;
+    }
+}
+.card .details h1{
+    font-family: "Lexend Deca", serif;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+@media (max-width:767px){
+    .card .details h1{
+        font-size: 25px;
+    }
+}
+.card .details h1 span{
+    color: var(--Soft-violet);
+}
+.card .details p{
+    color: var(--text-color);
+    line-height: 1.3rem;
+}
+.card .details div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.card .details div div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media(max-width:767px){
+    .card .details div{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.card .details div div span:first-child{
+    color: hsl(0, 0%, 100%);
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.card .details div div span:last-child{
+    color: var(--text-color);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.card .image{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+.card .image::before,
+.card .image::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .image::before{
+    background-color: var(--Soft-violet);
+    mix-blend-mode: multiply;
+}
+.card .image::after{
+    background-color: var(--Soft-violet);
+    opacity: 0.2;
+}
+@media(max-width:767px){
+    .card .image::before,
+    .card .image::after{
+        top:-4px;
+    }
+}
+.card .image img{
+    width: 100%;
+    height: 100%;
+}
