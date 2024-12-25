@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --dark-color:hsl(229, 23%, 23%);
+    --light-color:hsl(0, 0%, 59%);
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kumbh Sans", serif;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg) , url(./images/bg-pattern-bottom.svg) ;
+    background-repeat: no-repeat;
+    background-position: -50% 200% , 150% -180%;
+}
+.card{
+    width: 300px;
+    max-width: 100%;
+    background-color: white;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% 140px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 90px 20px 20px;
+}
+.card .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    border: 4px solid white;
+}
+.card .image img{   
+    width: 80px;
+    border-radius: 50%;
+}
+.card > div:nth-child(2) p{
+    color: var(--dark-color);
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.card > div:nth-child(2) span{
+    color: var(--light-color);
+    font-weight: 400;
+}
+.card > div:nth-child(2) span:last-child{
+    font-size: 14px;
+}
+.card > div:last-child{
+    width: calc(100% + 40px);
+    margin-top: 30px;
+    padding: 20px 20px 0;
+    border-top: 1px  hsla(227, 10%, 46%, 0.11) solid;
+    display: flex;
+    justify-content: space-between;
+}
+.card > div:last-child div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card > div:last-child div span:first-child{
+    color: var(--dark-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+.card > div:last-child div span:last-child{
+    color: var(--light-color);
+    font-size: 10px;
+    text-transform: uppercase;
+}
