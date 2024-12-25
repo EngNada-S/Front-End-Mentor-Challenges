@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Karla", serif;
+}
+:root{
+    --main-color:hsl(179, 62%, 43%);
+    --yellow:hsl(71, 73%, 54%);
+    --backg:hsl(218, 22%, 67%);
+    --text-color:hsl(204, 43%, 93%);
+}
+body{
+    background-color: var(--backg);
+}
+section{
+    margin: 100px auto;
+    width: 700px;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-rows: repeat(auto-fill,260px);
+}
+section div{
+    padding: 20px 30px;
+}
+section div:first-child{
+    grid-column: 1/-1;
+    background-color: white;
+}
+section div:first-child h3{
+    color: var(--main-color);
+    font-size: 25px;
+}
+section div:first-child p:first-of-type{
+    color: var(--yellow) ;
+    font-size: 18px;
+}
+section div:first-child p:last-of-type{
+    color:var(--backg);
+}
+h4{
+    font-size: larger;
+}
+section div:nth-child(2){
+    background-color: var(--main-color);
+    color: white;
+}
+section div:nth-child(2) p:first-of-type{
+    font-weight: 600;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+section div:nth-child(2) p:first-of-type span{
+    all:initial;
+    color: hsl(204, 43%, 93%);
+}
+section div:nth-child(2) button{
+    border: none;
+    outline: none;
+    background-color: var(--yellow);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+section div:last-child{
+    background-color: #4ABEBD;
+    color: white;
+}
+section div:last-child p{
+    width: 70%;
+    line-height: 1.3rem;
+    color: var(--text-color);
+}
