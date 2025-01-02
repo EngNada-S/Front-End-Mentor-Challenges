@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
+    font-family: "Open Sans", serif;
+}
+@media (max-width:767px){
+    body{
+        background-image: url("./images/bg-mobile.svg");
+        background-size: contain;
+    }
+}
+.container{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+@media (max-width:767px){
+    .container{
+        padding:0 20px ;
+    }
+}
+header{
+    margin-top: 35px;
+}
+header img{
+    width: 220px;
+}
+@media (max-width:767px){
+    header img{
+        width: 170px;
+    }
+}
+.content{
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.content img{
+    width: 50%;
+}
+@media (max-width:991px){
+    .content img{
+        width: 100%;
+    }
+}
+.content .text{
+    width: 35%;
+}
+@media (max-width:991px){
+    .content .text{
+        width: 90%;
+        text-align: center;
+    }
+}
+.content .text h1{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 35px;
+}
+@media (max-width:767px){
+    .content .text h1{
+        font-size: 25px;
+    }
+}
+.content .text p{
+    margin: 15px 0;
+    font-size: 17px;
+}
+.content .text button{
+    width: 150px;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: 15px 0;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.content .text button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px 0;
+}
+@media (max-width:991px){
+    footer{
+        justify-content: center;
+    }
+}
+footer i{
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%
+}
+footer i:hover{
+    color: hsl(300, 69%, 71%);
+    border-color:hsl(300, 69%, 71%) ;
+}
