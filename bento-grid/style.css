@@ -1,0 +1,171 @@
+/* general rules */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --purple1:hsl(254, 88%, 90%);
+    --purple2:hsl(256, 67%, 59%);
+    --yellow1:hsl(31, 66%, 93%);
+    --yellow2:hsl(39, 100%, 71%);
+}
+body{
+    background-color: hsl(0, 0%, 96%);
+    font-family: "DM Sans", serif;
+    font-size: 18px;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+/* -------------------------------------------------------------- */
+.grid{
+    width: 900px;
+    max-width: calc(100% - 30px);
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 15px;
+}
+@media (min-width:992px){
+    .grid{
+        grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+        grid-template-rows: repeat(3,200px);
+    }
+    .grid .box1{
+        grid-column: 2/span 2;
+    }
+    .grid .box4{
+        grid-column: 4;
+        grid-row: 1/ span 2;
+    }
+    .grid .box5{
+        grid-column: 3/span 2;
+    }
+    .grid .box6{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .grid .box7{
+        grid-column: 1;
+        grid-row: 1/ span 3;
+    }
+}
+.grid > div:not(.box7){
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.grid .box1{
+    background-color: var(--purple2);
+    text-align: center;
+    align-content: center;
+    color: hsl(0, 0%, 100%);
+}
+.grid .box1 p{
+    font-size: 38px;
+}
+.grid .box1 p span{
+    color: var(--yellow2);
+}
+.grid .box1 p:last-child{
+    font-size: 13px;
+}
+.grid .box1 img{
+    max-width: 130px;
+    margin:auto ;
+}
+.grid .box2{
+    background-color:hsl(0, 0%, 100%) ;
+}
+.grid .box2 img{
+    margin-bottom: 15px;
+}
+.grid .box3{
+    background-color: var(--yellow2);
+}
+.grid .box3 img{
+    margin: 10px 0;
+}
+.grid .box3 p:last-child{
+    font-size: 13px;
+}
+.grid .box4{
+    background-color: var(--purple1);
+}
+.grid .box4 img{
+    margin: 10px 0;
+}
+.grid .box4 p:last-child{
+    font-size: 13px;
+}
+.grid .box5{
+    background-color: var(--purple2);
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 25px;
+}
+.grid .box5 img{
+    max-width: 50%;
+}
+.grid .box6{
+    background-color:hsl(0, 0%, 100%) ;
+    font-size: 13px;
+}
+.grid .box6 span{
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+}
+.grid .box6 img{
+    margin-top: 15px;
+}
+@media (min-width:992px){
+    .grid .box7{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+    }
+}
+.grid .box7 div{
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.grid .box7 div:first-child{
+    background-color: var(--yellow1);
+}
+.grid .box7 div:last-child{
+    background-color: var(--yellow2);
+}
+@media (max-width:991px){
+    .grid .box7 div:last-child{
+        margin-top: 15px;
+    }
+}
+.grid .box7 div p,
+.grid .box2 p,
+.grid .box3 p,
+.grid .box4 p:first-child{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -2px;
+}
+.grid .box7 div p span{
+    color: var(--purple2);
+    display: block;
+    font-size: inherit;
+}
+.grid .box7 img{
+    margin-top: 15px;
+    max-width: 80%;
+}
