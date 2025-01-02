@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+span{
+    display: block;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", serif;
+}
+.grid{
+    width: 900px;
+    max-width: calc(100% - 20px);
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 15px;
+}
+@media (min-width:992px){
+    .grid{
+        grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+        grid-template-rows: repeat(2,250px);
+    }
+    .grid .box1{
+        grid-column: 1/span 2;
+    }
+    .grid .box4{
+        grid-column: 2/span 2;
+    }
+    .grid .box5{
+        grid-column: 4;
+        grid-row: 1/-1;
+    }
+}
+.grid .box1{
+    background-color:hsl(263, 55%, 52%) ;
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 0px;
+}
+.grid .box2{
+    background-color: hsl(217, 19%, 35%);
+}
+.grid .box3{
+    background-color:hsl(0, 0%, 100%) ;
+}
+.grid .box4{
+    background-color: hsl(219, 29%, 14%);
+}
+.grid .box5{
+    background-color:hsl(0, 0%, 100%) ;
+}
+.grid .box{
+    padding: 20px;
+    border-radius: 10px;
+}
+.grid .box > div:first-child{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.grid .box div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.grid .box > div:first-child span:first-of-type{
+    color: white;
+}
+.grid .box > div:first-child span:last-of-type{
+    color: hsl(0, 0%, 81%);
+}
+.grid .box p:first-of-type{
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+}
+.grid .box3 p:first-of-type,
+.grid .box5 p:first-of-type,
+.grid .box3 > div:first-child span:first-of-type,
+.grid .box5 > div:first-child span:first-of-type{
+    color: hsl(219, 29%, 14%);
+}
+.grid .box p:last-of-type{
+    color: hsl(0, 0%, 81%);
+}
+.grid .box3 p:last-of-type,
+.grid .box5 p:last-of-type,
+.grid .box3 > div:first-child span:last-of-type,
+.grid .box5 > div:first-child span:last-of-type{
+    color: hsl(217, 19%, 35%);
+}
