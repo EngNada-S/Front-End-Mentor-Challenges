@@ -1,4 +1,4 @@
-#clipboard-landing-page
+# clipboard-landing-page
 
 ## desktop
 ![desktop-design](https://github.com/EngNada-S/Front-End-Mentor-Challenges/blob/main/clipboard-landing-page/design/desktop-design.png?raw=true)
