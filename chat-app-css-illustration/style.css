@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --body-gradient: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    --header-gradient: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    --radio-gradient: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    --secondary-color: hsl(276, 100%, 96%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    z-index: -1;
+}
+
+body::before {
+    border-radius: 0 0 50% 50%;
+    inset: 0 auto auto -10%;
+    background-image: var(--body-gradient);
+}
+
+body::after {
+    border-radius: 50% 50% 0 0;
+    inset: auto -10% 0 auto;
+    background-color:  hsl(276, 100%, 99%);
+}
+
+@media(max-width:767px) {
+    body::before,
+    body::after {
+        height: 50%;
+    }
+
+    body::before {
+        inset: 0 auto auto 0;
+        border-radius: 0 0 90% 0;
+    }
+
+    body::after {
+        inset: auto 0 0 auto;
+        border-radius: 90% 0 0 0;
+    }
+}
+
+.booking {
+    width: 800px;
+    max-width: calc(100% - 30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.booking .mobile {
+    width: 320px;
+    padding: 9px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.mobile .container {
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 20px;
+}
+
+.mobile header {
+    padding: 30px 15px 10px;
+    background-image: var(--header-gradient);
+    border-radius: 15px 15px 5px 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.mobile header::before {
+    content: "";
+    width: 60%;
+    height: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mobile header i {
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.mobile header .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobile header .user img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.mobile header .user div p:first-of-type {
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+}
+
+.mobile header .user div p:last-of-type {
+    color: white;
+    font-size: 10px;
+    color: hsl(206, 6%, 79%);
+}
+
+.mobile header .dots {
+    flex: 1;
+    direction: rtl;
+    cursor: pointer;
+}
+.mobile header .dots p{
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 1px;
+}
+.mobile section {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.mobile section div.send {
+    width: 72%;
+    padding: 10px;
+    border-radius: 20px 20px 20px 5px;
+    background-color: var(--secondary-color);
+    color: hsl(276, 55%, 52%);
+}
+
+.mobile section div.images {
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.mobile section div.images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.mobile section div.recieve {
+    width: fit-content;
+    max-width: 72%;
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    padding: 10px;
+    border-radius: 20px 20px 5px 20px;
+    align-self: flex-end;
+}
+
+.mobile section div.gradient {
+    width: 80%;
+    padding: 15px;
+    border-radius: 20px 20px 20px 5px;
+    background-image: var(--radio-gradient);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-image 0.3s ease;
+}
+
+.mobile section div.gradient:hover {
+    background-image: var(--header-gradient);
+}
+
+.mobile section div.gradient label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile section div.gradient label span:last-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mobile footer {
+    padding: 0px 15px 10px;
+}
+
+.mobile footer div {
+    padding: 8px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile footer div input {
+    outline: none;
+    border: none;
+}
+
+.mobile footer div i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(271, 36%, 24%);
+    color: white;
+}
+
+.mobile footer div input::placeholder {
+    color: hsl(206, 6%, 79%);
+}
+
+.booking .details {
+    width: 50%;
+}
+
+.booking .details h1 {
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.booking .details p {
+    color: hsl(270, 7%, 64%);
+    line-height: 1.4rem;
+}
+
+@media(max-width:767px) {
+    .booking {
+        margin: 50px 0;
+    }
+
+    .booking .mobile {
+        margin: auto;
+    }
+
+    .booking .details {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    border: 1px solid white;
+}
+
+input[type="radio"]:checked {
+    background-color: white;
+}
