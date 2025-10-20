@@ -5,6 +5,7 @@
 body{
     min-height: 100vh;
     margin: 0;
+    padding: 15px;
     background-color: hsl(30, 38%, 92%);
     font-family: "Montserrat", serif;
     display: flex;
@@ -12,8 +13,8 @@ body{
     align-items: center;
 }
 .card{
-    width: 600px;
-    max-width: calc(100% - 30px);
+    max-width: 600px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: hsl(0, 0%, 100%);
@@ -22,7 +23,7 @@ body{
 }
 @media (max-width:767px){
     .card {
-        margin: 50px 0;
+        margin: 50px auto;
     }
 }
 .card .image{
@@ -44,6 +45,7 @@ body{
 @media (max-width:767px){
     .card .details{
         width: 100%;
+        padding: 20px;
     }
 }
 .card .details p:first-of-type{
