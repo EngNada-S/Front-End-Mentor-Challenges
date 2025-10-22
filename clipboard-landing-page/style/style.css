@@ -253,6 +253,8 @@ footer .container ul{
 footer .container ul li{
     width: calc(100% / 3);
     color: var(--heading-color);
+    cursor: pointer;
+    transition:0.2s ease;
 }
 footer .container ul li:hover{
     color:hsl(171, 66%, 44%) ;
@@ -266,6 +268,8 @@ footer .container .media{
 footer .media i{
     font-size: 27px;
     color: var(--heading-color);
+    cursor: pointer;
+    transition:0.2s ease;
 }
 footer .media i:hover{
     color:hsl(171, 66%, 44%)  ;
