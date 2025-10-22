@@ -22,6 +22,6 @@ This repository contains my **solutions to Frontend Mentor challenges** built us
 | 12  | [social-proof-section](https://github.com/EngNada-S/Front-End-Mentor-Challenges/tree/main/social-proof-section)|[View](https://social-proof-section-femchallenge.netlify.app/)|
 | 13  | [four-card-feature-section](https://github.com/EngNada-S/Front-End-Mentor-Challenges/tree/main/four-card-feature-section)|[View](https://four-card-feature-femchallenge.netlify.app/)|
 | 14  | [single-price-grid-component](https://github.com/EngNada-S/Front-End-Mentor-Challenges/tree/main/single-price-grid-component)|[View](https://single-price-grid-femchallenge.netlify.app/)|
-| 15  | [huddle-landing-page-with-single-introductory-section](https://github.com/EngNada-S/Front-End-Mentor-Challenges/tree/main/huddle-landing-page-with-single-introductory-section)|[](https://huddle-landing-page-single-intro-fem.netlify.app/)|
+| 15  | [huddle-landing-page-with-single-introductory-section](https://github.com/EngNada-S/Front-End-Mentor-Challenges/tree/main/huddle-landing-page-with-single-introductory-section)|[View](https://huddle-landing-page-single-intro-fem.netlify.app/)|
 
 
