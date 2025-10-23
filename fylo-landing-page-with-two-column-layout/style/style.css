@@ -82,6 +82,10 @@ header .container ul {
     color: hsl(238, 22%, 44%);
 }
 
+header .container ul li {
+    cursor: pointer;
+}
+
 @media(max-width:767px) {
     header .container img {
         width: 80px;
@@ -139,6 +143,8 @@ header .container ul {
     outline: none;
     color: white;
     background-color: hsl(224, 93%, 58%);
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .landing .container .data input:last-of-type:hover {
@@ -354,6 +360,11 @@ header .container ul {
     background-color: hsl(224, 93%, 58%);
     margin-top: 25px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.access .container>div:last-child button:hover {
+    opacity: 0.7;
 }
 
 .access .container>div:last-child input:invalid+button::before {
@@ -414,6 +425,8 @@ footer .container ul {
 footer .container ul li {
     width: 40%;
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 @media(max-width:767px) {
@@ -441,6 +454,8 @@ footer .media i {
     font-size: 15px;
     border-radius: 50%;
     border: 2px white solid;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 footer .media i:hover {
@@ -449,6 +464,7 @@ footer .media i:hover {
 }
 
 @media(max-width:767px) {
+
     footer .container .contact,
     footer .container ul,
     footer .media {
